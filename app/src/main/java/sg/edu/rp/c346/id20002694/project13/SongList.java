@@ -5,6 +5,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -66,12 +68,14 @@ public class SongList extends AppCompatActivity {
                 if (show==false){
                     al.addAll(dbh.getAllSongs(rating));
                     aa.notifyDataSetChanged();
+                    btnShow.setText("Show all cars");
                     show=true;
                 }
                 else if (show==true){
                     al.clear();
                     al.addAll(dbh.getAllSongs());
                     aa.notifyDataSetChanged();
+                    btnShow.setText("Show all cars with 5 stars");
                     show=false;
                 }
 
@@ -121,6 +125,8 @@ public class SongList extends AppCompatActivity {
                 AlertDialog myDialog = myBuilder.create();
                 myDialog.show();
             }
+
+
         });
 
     }
@@ -136,4 +142,6 @@ public class SongList extends AppCompatActivity {
         aa.notifyDataSetChanged();
         dbh.close();
     }
+
+
 }

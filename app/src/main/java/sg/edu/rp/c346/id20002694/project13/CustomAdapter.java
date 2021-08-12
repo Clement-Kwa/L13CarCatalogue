@@ -56,7 +56,7 @@ public class CustomAdapter extends ArrayAdapter {
 
 
         if(now-currentYear.getYear()>=0 &&  now-currentYear.getYear()<6){
-            iv.setImageResource(R.drawable.uni_log12);
+            iv.setImageResource(R.drawable.new_image);
         }
         else if(now-currentYear.getYear()>=20){
             iv.setImageResource(R.drawable.uni_logo2);

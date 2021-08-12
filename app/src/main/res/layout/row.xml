@@ -65,7 +65,7 @@
             android:layout_height="55dp"
 
 
-            app:srcCompat="@drawable/uni_log12" />
+            app:srcCompat="@drawable/new_image" />
 
     </LinearLayout>
 

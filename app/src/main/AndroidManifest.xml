@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project13">
-        <activity android:name=".EditSong"></activity>
-
+        <activity android:name=".EditSong" />
         <activity android:name=".SongList">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
